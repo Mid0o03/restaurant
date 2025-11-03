@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Tavola - Restaurant Italien</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header>
+    <nav>
+      <h1>La Tavola</h1>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservations">Réservations</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section Accueil -->
+  <section id="accueil">
+    <div class="hero">
+      <h2>Le goût de l’Italie,<br> à deux pas de chez vous</h2>
+      <a href="#menu" class="btn">Voir le menu</a>
+    </div>
+  </section>
+
+  <!-- Section Menu -->
+  <section id="menu">
+    <h2>Notre menu</h2>
+    <div class="filtres">
+      <button data-filtre="tous">Tous</button>
+      <button data-filtre="entree">Entrées</button>
+      <button data-filtre="plat">Plats</button>
+      <button data-filtre="dessert">Desserts</button>
+      <button data-filtre="boisson">Boissons</button>
+    </div>
+    <div class="plats">
+      <!-- JS injectera ici les plats -->
+    </div>
+  </section>
+
+  <!-- Section Réservations -->
+  <section id="reservations">
+    <h2>Réserver une table</h2>
+    <form>
+      <input type="text" placeholder="Nom complet" required />
+      <input type="email" placeholder="Email" required />
+      <input type="date" required />
+      <input type="time" required />
+      <input type="number" placeholder="Nombre de personnes" min="1" required />
+      <button type="submit">Réserver</button>
+    </form>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="apropos">
+    <h2>À propos de La Tavola</h2>
+    <p>La Tavola est un restaurant italien familial fondé en 1998...</p>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <p>📍 123 Rue de Rome, Paris</p>
+    <p>📞 01 23 45 67 89</p>
+    <p>🕒 Ouvert tous les jours de 12h à 23h</p>
+    <form>
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre email" required />
+      <textarea placeholder="Votre message..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 La Tavola. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
